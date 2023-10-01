@@ -1,0 +1,24 @@
+/*
+Escreva um programa que pergunte ao usuário quantos alunos tem na sala dele.
+Em seguida, através de um laço for, pede ao usuário para que entre com as notas de todos os alunos da sala, um por vez.
+
+Por fim, o programa mostra a média, aritmética, da turma.
+
+import java.util.Scanner;*/
+
+public class execicio4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Quantos usuários possuem na sala");
+        int n1 = sc.nextInt();
+        int totalNotas = 0;
+
+        for (int i = 1; i <= n1; i++) {
+            System.out.println("Entre com a nota dos alunos");
+            int nota = sc.nextInt();
+            totalNotas = totalNotas + nota;
+
+        }double media = (double) totalNotas / n1;
+        System.out.println("A media da sala é: " + media);
+    }
+}
