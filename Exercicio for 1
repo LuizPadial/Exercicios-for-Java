@@ -1,0 +1,15 @@
+/*
+1. Programa em Java que mostra os números pares
+Escreva um aplicativo em Java mostra todos os números impares de 1 até 100.
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 != 0 ){
+                System.out.println("impar "+i);
+            }
+        }
+    }
+}
